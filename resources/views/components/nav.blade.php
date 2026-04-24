@@ -25,5 +25,3 @@
         <a class="btn">Register</a> 
     </div>
 </div>
-
-prueba
