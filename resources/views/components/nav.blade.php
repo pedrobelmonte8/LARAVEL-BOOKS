@@ -22,6 +22,8 @@
     </div>
     <div class="navbar-end">
         <a class="btn">Login</a>
-        <a class="btn">Register</a>
+        <a class="btn">Register</a> 
     </div>
 </div>
+
+prueba
