@@ -17,9 +17,9 @@
 <body>
     <x-nav></x-nav>
 
-    <body>
+    <main class="container mx-auto mt-4">
         {{ $slot }}
-    </body>
+    </main>
 </body>
 
 </html>

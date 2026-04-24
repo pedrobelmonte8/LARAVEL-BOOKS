@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\SessionController;
 
 Route::get('/', [BookController::class, 'index']);
 Route::get('/categories', [CategoryController::class, 'index']);
+Route::get('/books/{bookId}', [BookController::class, 'show']);
 
 Route::middleware('guest')->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create']);
@@ -18,4 +19,5 @@ Route::middleware('guest')->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::delete('/logout', [SessionController::class, 'destroy']);
+    Route::get('/books/{bookId}', [BookController::class, 'show']);
 });
